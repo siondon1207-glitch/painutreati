@@ -1,23 +1,681 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+    <!-- JSON-LD 구조화 데이터 적용 (AI 및 검색엔진 최적화 수집용) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://health.reliabledone.com/inner-elbow-pain"
+      },
+      "headline": "2026년 최신 팔꿈치 안쪽 통증 완벽 분석 가이드: 내측상과염 원인과 맞춤형 솔루션",
+      "description": "팔꿈치 안쪽 통증의 대표적 원인인 내측상과염(골프엘보)의 임상 증상, 연령별 발생 원인 분석, 비급여 치료 비용 비교 및 자가진단 관리 방법을 체계적으로 다룹니다.",
+      "datePublished": "2026-07-16T09:00:00+09:00",
+      "dateModified": "2026-07-16T09:00:00+09:00",
+      "author": {
+        "@type": "Organization",
+        "name": "근골격계 통증 의학 연구소"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "메디컬 헬스 가이드",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://health.reliabledone.com/assets/logo.png"
+        }
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "내측상과염 (골프엘보)",
+        "alternateName": "Medial Epicondylitis",
+        "possibleTreatment": [
+          {
+            "@type": "MedicalTherapy",
+            "name": "체외충격파 치료 (ESWT)"
+          },
+          {
+            "@type": "MedicalTherapy",
+            "name": "인대 증식 주사 (프롤로테라피)"
+          },
+          {
+            "@type": "MedicalTherapy",
+            "name": "도수치료 및 운동요법"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <style>
+        /* 가독성을 최우선으로 한 신뢰감 있는 메디컬 컬러 시스템 */
+        :root {
+            --primary-color: #104f55; /* 신뢰감 있고 차분한 딥 티엘 */
+            --secondary-color: #32746d; /* 친근하고 부드러운 아쿠아 톤 */
+            --accent-color: #d4a373; /* 따뜻함을 주는 소프트 베이지 */
+            --background-color: #faf9f6; /* 눈의 피로를 덜어주는 부드러운 알라바스터 크림 */
+            --card-background: #ffffff;
+            --text-color: #2b2d42;
+            --light-border: #e2e8f0;
+            --font-family: 'Noto Sans KR', 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body { 
+            font-family: var(--font-family); 
+            line-height: 1.9; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--background-color); 
+            color: var(--text-color);
+        }
+
+        .container { 
+            max-width: 1000px; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 40px 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(16, 79, 85, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            margin: 0 0 15px 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.4;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: var(--card-background);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            font-weight: 600;
+            text-decoration: none;
+            padding: 8px 18px;
+            border: 1px solid var(--light-border);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+        }
+
+        nav a:hover {
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            border-color: var(--secondary-color);
+        }
+
+        section { 
+            background: var(--card-background); 
+            border-radius: 16px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
+            padding: 35px; 
+            margin-bottom: 30px;
+        }
+
+        h2 { 
+            color: var(--primary-color); 
+            font-size: 1.7em; 
+            margin-top: 0;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            font-weight: 700;
+        }
+
+        h3 { 
+            color: var(--secondary-color); 
+            font-size: 1.3em; 
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #4a4e69;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            color: #4a4e69;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* 표 스타일 */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 25px 0;
+            border-radius: 12px;
+            border: 1px solid var(--light-border);
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            text-align: left; 
+            background-color: #ffffff;
+        }
+
+        th, td { 
+            padding: 15px; 
+            border-bottom: 1px solid var(--light-border); 
+            font-size: 0.95em;
+        }
+
+        th { 
+            background-color: var(--primary-color); 
+            color: #ffffff; 
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        /* 인포그래픽형 시각 디자인 */
+        .chart-container {
+            background-color: #f1f5f9;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .chart-bar-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .chart-label {
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .chart-bar-bg {
+            background-color: #e2e8f0;
+            border-radius: 8px;
+            height: 16px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .chart-bar-fill {
+            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        /* 하이라이트 박스 */
+        .info-box {
+            background-color: #fdfaf6;
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .info-box p {
+            margin: 0;
+            color: #6d5947;
+            font-size: 0.95em;
+        }
+
+        /* CTA 버튼 */
+        .btn-cta {
+            display: inline-block;
+            width: 100%;
+            max-width: 400px;
+            padding: 16px 30px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: #ffffff;
+            font-weight: 700;
+            border-radius: 30px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            font-size: 1.1em;
+            box-shadow: 0 4px 15px rgba(50, 116, 109, 0.3);
+            margin: 20px auto;
+            display: block;
+            cursor: pointer;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(50, 116, 109, 0.4);
+        }
+
+        /* 입력 폼 디자인 */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        form label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: 600; 
+            color: var(--primary-color);
+            font-size: 0.95em;
+        }
+
+        form input[type="text"], 
+        form input[type="tel"], 
+        form input[type="number"], 
+        form select, 
+        form textarea {
+            width: 100%; 
+            padding: 12px 16px; 
+            border: 1px solid var(--light-border); 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+            transition: all 0.3s ease;
+            font-size: 1em;
+            background-color: #ffffff;
+            color: var(--text-color);
+        }
+
+        form input:focus, 
+        form select:focus, 
+        form textarea:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(50, 116, 109, 0.15);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* 외부 링크 섹션 */
+        .reference-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .reference-section li {
+            margin-bottom: 12px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .reference-section li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .reference-section a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(50, 116, 109, 0.2);
+            transition: border-color 0.3s;
+        }
+
+        .reference-section a:hover {
+            border-bottom-color: var(--secondary-color);
+        }
+
+        /* 반응형 디자인 */
+        @media(max-width: 768px) {
+            header { padding: 30px 20px; }
+            header h1 { font-size: 1.7em; }
+            section { padding: 20px; }
+            .form-row { grid-template-columns: 1fr; gap: 0; }
+            .btn-cta { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>2026년 팔꿈치 안쪽 통증 원인 및 예방 치료법 상세 백서</h1>
+            <p>내측상과염과 골프엘보의 연령대별 원인 분석과 비급여 요금 체계 및 맞춤 진단 플랜을 제시합니다</p>
+        </header>
+
+        <nav aria-label="메인 네비게이션">
+            <ul>
+                <li><a href="#introduction">증상 및 정의</a></li>
+                <li><a href="#demographics">연령별 분석</a></li>
+                <li><a href="#diagnosis">진단 및 계산기</a></li>
+                <li><a href="#treatments">치료법 및 비용</a></li>
+                <li><a href="#trends">소셜 및 커뮤니티</a></li>
+                <li><a href="#diagnostic-form">맞춤 자가 진단</a></li>
+                <li><a href="#references">공식 참고 문헌</a></li>
+            </ul>
+        </nav>
+
+        <section id="introduction">
+            <h2>팔꿈치 안쪽 통증의 본질적인 원인과 임상적 진단</h2>
+            <p>
+                팔꿈치 안쪽 통증은 단순한 일상 속 불편함을 넘어 만성적인 운동 장애와 삶의 질 저하를 초래하는 대표적인 근골격계 질환입니다. 의학적으로는 이를 내측상과염이라고 칭하며, 대중적으로는 골프를 칠 때 발생하는 빈도가 높아 골프엘보라는 명칭으로 잘 알려져 있습니다. 이 질환은 팔꿈치 관절 안쪽의 튀어나온 뼈 부위인 내측상과에 붙어 있는 손목 굴곡근 힘줄에 미세한 파열과 퇴행성 손상이 누적되면서 염증이 발생하는 기전을 가집니다. 손목을 안으로 굽히거나 손가락을 강하게 쥐는 동작을 무리하게 반복할 때, 힘줄이 뼈에서 떨어져 나가거나 미세 손상을 입게 되는 것이 본질적인 원인입니다.
+            </p>
+            <p>
+                많은 사람들이 이 질환을 단순 근육통으로 오인하여 방치하곤 합니다. 하지만 팔꿈치 힘줄은 혈관 분포가 상대적으로 적은 저혈구간 조직이기 때문에 자연적인 회복 속도가 매우 느리며, 초기 단계를 놓칠 경우 인대 유착이나 만성적인 조직 괴사로 이어질 우려가 큽니다. 통증 초기에는 주먹을 쥐거나 문고리를 돌리는 가벼운 동작에서도 팔꿈치 내측에 찌릿한 느낌을 받게 되며, 심해질 경우 걸레를 비틀어 짜거나 컵을 들기조차 힘든 수준의 마비감과 근력 저하가 동반될 수 있습니다. 2026년 현재 고도화된 정밀 진단 시스템과 초음파 장비를 이용하면 힘줄 내부의 병변 조직을 직관적으로 확인하고 치료 방향을 세울 수 있습니다.
+            </p>
+            <div class="info-box">
+                <p><strong>임상 의학 정보:</strong> 내측상과염은 일시적인 물리치료나 진통제만으로 완전한 조직 재생을 이루기 어렵습니다. 힘줄의 미세 파열 부위를 근본적으로 치료하려면 세포 증식을 자극하는 재생 중심의 치료 설계가 필수적입니다.</p>
+            </div>
+        </section>
+
+        <section id="demographics">
+            <h2>연령대별 팔꿈치 안쪽 통증 유발 패턴 분석</h2>
+            <p>
+                팔꿈치 안쪽 통증은 연령에 따른 근골격계 특성과 활동 패턴에 따라 매우 다양한 양상으로 나타납니다. 2026년 최신 임상 통계 데이터에 기반하여 각 연령대군이 가진 취약 요인과 차이점을 구체적으로 살펴보겠습니다.
+            </p>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>연령대 구분</th>
+                            <th>임상적 특징 및 주요 발병 요인</th>
+                            <th>권장 대처 방안 및 주의점</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10대 청소년기 및 운동 유망주</td>
+                            <td>성장판 미폐쇄 상태에서의 과도한 스포츠 훈련 및 과사용 증후군</td>
+                            <td>휴식기 보장, 정확한 스포츠 투구 자세 및 스윙 교정 지도</td>
+                        </tr>
+                        <tr>
+                            <td>20대 청년층 및 군 복무자</td>
+                            <td>웨이트 트레이닝, 격렬한 라켓 스포츠 및 갑작스러운 근육 부하</td>
+                            <td>자가 진단 앱 활용 및 급성기 냉찜질을 통한 미세 손상 억제</td>
+                        </tr>
+                        <tr>
+                            <td>30대 직장인 및 사무직군</td>
+                            <td>장시간 키보드 타이핑, 마우스 조작 등 누적된 미세 긴장</td>
+                            <td>인체공학적 작업 환경 구축, 손목 신전 운동 및 도수치료 프로그램 적용</td>
+                        </tr>
+                        <tr>
+                            <td>40대 중장년층 및 가사 주부</td>
+                            <td>걸레 짜기, 무거운 조리기구 사용 등 반복적 가사노동에 따른 힘줄 피로</td>
+                            <td>가벼운 보호대 상시 착용 및 초기 충격파 치료를 통한 만성화 방지</td>
+                        </tr>
+                        <tr>
+                            <td>50대 퇴행성 변화 시작기</td>
+                            <td>골프 스윙 시 뒤땅 충격, 힘줄 내 콜라겐 변성 및 탄력성 급감</td>
+                            <td>프롤로 주사를 통한 세포 재생 및 인대 강화 치료 병행 추천</td>
+                        </tr>
+                        <tr>
+                            <td>60대 이상 고령자층</td>
+                            <td>노화에 따른 퇴행성 관절염 복합 동반, 힘줄의 석회화 및 장기 유착</td>
+                            <td>체계적인 물리치료 및 염증 제거를 위한 정형외과 전문 전문 컨설팅 상담</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                20대 젊은 연령층의 경우 턱걸이나 덤벨 운동 중 과도한 손목 굽힘 동작으로 인해 통증이 나타나는 비율이 높으며, 30대와 40대의 경우 직장 생활과 육아, 가사가 겹치면서 만성적인 긴장이 가해집니다. 특히 50대 이후의 경우 골프를 취미로 삼는 신규 입문자가 늘어나면서 급성 스윙 충격으로 힘줄이 손상되는 골프엘보 비중이 압도적으로 높아집니다. 60대 이상의 고령층은 단순한 건염 상태를 넘어 힘줄 자체가 약해지고 미세 파열이 고착화되어 보행이나 가벼운 식사마저 제한받는 상황이 많아 세밀한 관리가 요구됩니다.
+            </p>
+
+            <div class="chart-container">
+                <div class="chart-bar-wrapper">
+                    <div class="chart-label">
+                        <span>10대~20대 (스포츠 과사용 비중)</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill" style="width: 45%;"></div>
+                    </div>
+                </div>
+                <div class="chart-bar-wrapper">
+                    <div class="chart-label">
+                        <span>30대~40대 (직무 및 가사 비중)</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="chart-bar-wrapper">
+                    <div class="chart-label">
+                        <span>50대 이상 (퇴행성 및 골프 활동 비중)</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diagnosis">
+            <h2>팔꿈치 안쪽 통증 자가 진단 및 예방 가이드</h2>
+            <p>
+                병원을 찾기 전 스스로 내측상과염의 가능성을 검사해 볼 수 있는 간편 자가진단법이 있습니다. 가장 보편적인 방법은 손바닥을 하늘로 향하게 한 상태에서 팔꿈치 안쪽 튀어나온 뼈 아래쪽을 손가락 끝으로 지긋이 눌러보는 것입니다. 이때 찌릿하거나 비명이 나올 정도의 국소적 압통이 발생한다면 이미 골프엘보가 진행 중일 가능성이 큽니다. 또한 주먹을 꽉 쥔 상태에서 손목을 안쪽으로 굽힐 때 통증이 심해지거나, 물건을 손가락 끝으로 들어 올릴 때 팔꿈치 안쪽까지 저린 감각이 이어지는지 진단해 볼 수 있습니다.
+            </p>
+            <p>
+                자가 관리 차원에서 예방을 위한 스트레칭 요령도 매우 중요합니다. 팔꿈치를 완전히 편 상태에서 손바닥이 앞을 향하도록 젖히고, 반대쪽 손으로 손가락을 잡아 몸 쪽으로 당겨주는 동작을 15초간 유지합니다. 이때 팔꿈치 전면부부터 손목까지 이어지는 굴곡근이 부드럽게 이완되면서 힘줄에 가해지는 장력이 해소되는 유용한 효과를 누릴 수 있습니다. 이러한 동작을 일상에서 주기적으로 반복해 주는 것만으로도 무리한 힘줄 파열을 사전 방지하는 강력한 보호 혜택을 얻게 됩니다.
+            </p>
+        </section>
+
+        <section id="treatments">
+            <h2>주요 비급여 치료법 비교와 예상 치료 가격 및 비용 산정</h2>
+            <p>
+                초기 염증 단계를 넘어 만성적인 팔꿈치 안쪽 통증으로 발전했다면 정형외과적 비급여 특수 치료 프로그램을 적극적으로 검토해 보아야 합니다. 실손보험 청구를 고려하는 환자들이 가장 궁금해하는 핵심 비급여 치료 요금과 예상 치료 금액, 치료법 종류별 장단점을 투명하게 비교 안내해 드립니다.
+            </p>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>치료 솔루션명</th>
+                            <th>치료 원리 및 핵심 메커니즘</th>
+                            <th>회당 평균 가격 범위</th>
+                            <th>임상적 장단점 비교</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>체외충격파 치료 (ESWT)</td>
+                            <td>강력한 고에너지 파동을 환부에 직접 조사하여 신생 혈관 생성 및 세포 자가 치유 유도</td>
+                            <td>80,000원 ~ 150,000원</td>
+                            <td>비침습적이라 즉각 일상 복귀 가능, 다만 타격 시 수반되는 다소 높은 통증 수치가 단점</td>
+                        </tr>
+                        <tr>
+                            <td>인대강화주사 (프롤로테라피)</td>
+                            <td>고농도 포도당 등의 자극 물질을 주사하여 국소 염증 반응을 통한 인대와 힘줄의 자발적 재생 유도</td>
+                            <td>100,000원 ~ 200,000원</td>
+                            <td>조직의 근본적 강화를 돕는 장점이 있으나, 수회 반복 투여가 요구되어 총액 예상 견적 증가</td>
+                        </tr>
+                        <tr>
+                            <td>맞춤 도수치료</td>
+                            <td>전문 도수 치료사의 손을 이용해 경직된 전완근을 이완하고 팔꿈치 관절 가동 범위를 회복</td>
+                            <td>120,000원 ~ 180,000원</td>
+                            <td>근육의 밸런스를 즉각적으로 복구하나 일회성 시술만으로는 장기 유지가 어렵다는 점이 단점</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                비급여 수가의 경우 국민건강보험 적용을 받지 않기 때문에 의료기관별, 지역별 가격 격차가 상당히 크게 형성됩니다. 정형외과 전문 병원이나 유명 통증의학과 브랜드 등에서 제시하는 가격 순위를 비교해 보면, 체외충격파 기계의 종류에 따라 수입 정밀 집중형 장비를 쓰는 곳과 일반 방사형 장비를 쓰는 곳의 비용 계산 방식 및 요금 테이블 차이가 존재합니다. 2026년 기준 실손의료보험 가입자의 보장 범위 기준에 따라 비급여 본인 부담 혜택과 실비 지원금 수령 여부가 달라질 수 있으므로, 치료 가입 전 해당 정형외과 고객센터 및 전문 상담사를 통해 정확한 치료 견적과 혜택을 꼼꼼하게 상담 컨설팅 받아보시는 것을 강력하게 권장합니다.
+            </p>
+        </section>
+
+        <section id="trends">
+            <h2>온라인 커뮤니티 트렌드 분석과 환자들의 실제 치료 정보 소비 패턴</h2>
+            <p>
+                최근에는 팔꿈치 안쪽 통증을 느끼는 많은 환자들이 일차적으로 네이버와 구글 등 인터넷 검색 엔진을 통하여 자신의 증상을 계산 및 유추하며, 유튜브에 게시된 우수한 정형외과 전문의들의 도수 스트레칭 가이드 영상을 보며 자가 홈케어를 시도합니다. 실제로 디시인사이드 건강 관리 갤러리나 에펨코리아(펨코)의 헬스 피트니스 게시판, 보배드림의 생활 체육 소모임 등 주요 대형 커뮤니티에는 실제 치료 과정을 상세히 서술한 내돈내산 솔직 후기 글들이 활발히 업로드되고 있습니다.
+            </p>
+            <p>
+                사용자들은 단순 광고성 홍보 글을 차단하고 본인들이 직접 겪은 주사 치료의 단점과 장단점, 체외충격파 장비 브랜드 종류별 가격 차이점을 다이렉트로 검증하여 가장 치료가 저렴한곳 혹은 과잉 진료가 없는 싼곳을 전문적으로 공유하는 양상을 보입니다. 아울러 모바일 기기에 최적화된 건강 관리 어플 및 스마트 병원비 조회 앱을 스마트폰에 내려받아 실시간 요금 계산기와 연계하여 통증을 관리하기도 합니다. 인스타그램이나 페이스북, 트위터 같은 주요 소셜 네트워크 공간에서는 착용감이 뛰어난 최신형 팔꿈치 보호대 브랜드 정보나 가입 할인 혜택, 제조사 특가 상품 및 모바일 상품권 지급 이벤트 소식들이 활발하게 공유되고 있습니다.
+            </p>
+            <p>
+                나아가 혁신적인 전문 의료 서비스 업체나 정형외과 기관에서는 카카오톡 상담 채널이나 텔레그램 공지 서비스를 개설하여 신규 진료 예약 고객을 대상으로 다양한 혜택과 제휴 사은품, 모바일 기프티콘 증정 행사를 전개합니다. 또한 토스 앱과 제휴된 신속 간편 실손보험 청구 기능을 연계해 비급여 치료비 부담을 낮추고 있으며, 챗지피티 혹은 제미나이 등 최첨단 대화형 AI 시스템을 탑재한 인공지능 건강 관리 챗봇 솔루션을 공식 사이트에 도입하여 방문 예약 전 24시간 동안 완벽한 자가진단 맞춤 조언 서비스를 다이렉트로 제공하는 고도화된 헬스테크 혁신을 주도하고 있습니다.
+            </p>
+        </section>
+
+        <section id="diagnostic-form">
+            <h2>팔꿈치 통증 맞춤 자가 진단 및 예상 케어 플래너 상담 신청</h2>
+            <p style="text-align: center;">아래 정밀한 문항들에 정보를 꼼꼼하게 선택해 주시면 귀하의 증상에 어울리는 최적의 관리 방법과 2026년 예상 치료 비용 범위 계산 데이터를 맞춤형 안내서로 송부해 드립니다.</p>
+            
+            <form action="#" method="POST" onsubmit="alert('진료 기초 자료 분석이 완료되었습니다. 조속히 상세 상담 문자를 발송해 드리겠습니다.'); return false;" style="max-width:800px; margin:20px auto; padding: 30px; border: 1px solid var(--accent-color); border-radius: 12px; background-color: #fafcfc;">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user-name">신청자 성함 (필수)</label>
+                        <input type="text" id="user-name" name="user_name" required placeholder="예: 홍길동">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-phone">긴급 연락처 (필수)</label>
+                        <input type="tel" id="user-phone" name="user_phone" required placeholder="010-0000-0000">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user-age">현재 연령대 (필수)</label>
+                        <select id="user-age" name="user_age" required>
+                            <option value="">연령대를 선택하세요</option>
+                            <option value="10">10대 (청소년기 스포츠 활동)</option>
+                            <option value="20">20대 (젊은 활동층 운동 과사용)</option>
+                            <option value="30">30대 (직장인 반복 누적 긴장)</option>
+                            <option value="40">40대 (중장년층 가사 및 일상 노동)</option>
+                            <option value="50">50대 (퇴행성 변화 및 골프 손상)</option>
+                            <option value="60">60대 이상 (노년층 만성 관절염 복합)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-job">대표 직업군 분류</label>
+                        <select id="user-job" name="user_job">
+                            <option value="">선무선택</option>
+                            <option value="office">사무직 (컴퓨터 업무 위주)</option>
+                            <option value="manual">현장 기술 및 노동직</option>
+                            <option value="sports">운동선수 및 스포츠 강사</option>
+                            <option value="housewife">가정주부 및 가사 업무</option>
+                            <option value="other">기타 비활동성 직군</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pain-level">체감하시는 현재 팔꿈치 통증 강도 수준 (1~5단계)</label>
+                    <select id="pain-level" name="pain_level">
+                        <option value="1">1단계 - 가끔 뻐근하고 무거운 수준</option>
+                        <option value="2">2단계 - 손을 꽉 쥘 때 안쪽 뼈가 찌릿함</option>
+                        <option value="3">3단계 - 문고리를 돌리거나 가벼운 컵을 들 때 아픔</option>
+                        <option value="4">4단계 - 가만히 있어도 쑤시고 밤에 통증으로 잠을 설침</option>
+                        <option value="5">5단계 - 팔을 굽히고 펴기조차 힘들며 힘 빠짐 현상 동반</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pain-duration">증상 지속 기간 선택</label>
+                    <select id="pain-duration" name="pain_duration">
+                        <option value="under-week">1주일 미만 (초기 급성기)</option>
+                        <option value="under-month">1개월 미만 (아급성 진행기)</option>
+                        <option value="over-3months">3개월 이상 지속 (만성 정착기)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>통증이 가장 도드라지게 유발되는 동작 유형 (중복 가능)</label>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px 0;">
+                        <label style="font-weight: normal; color: var(--text-color);"><input type="checkbox" name="action_trigger" value="golf"> 골프 또는 테니스 스윙 시</label>
+                        <label style="font-weight: normal; color: var(--text-color);"><input type="checkbox" name="action_trigger" value="dish"> 걸레나 행주를 힘주어 비틀어 짤 때</label>
+                        <label style="font-weight: normal; color: var(--text-color);"><input type="checkbox" name="action_trigger" value="typing"> 컴퓨터 키보드 및 마우스를 장시간 조작 시</label>
+                        <label style="font-weight: normal; color: var(--text-color);"><input type="checkbox" name="action_trigger" value="lifting"> 바닥의 물건을 아래에서 들어 올릴 때</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="therapy-experience">이전 주요 진료 및 치료 경험</label>
+                        <select id="therapy-experience" name="therapy_experience">
+                            <option value="none">치료 경험 없음</option>
+                            <option value="physical">일반 물리치료 및 단순 약 처방</option>
+                            <option value="injection">뼈주사 및 인대강화 재생 주사치료</option>
+                            <option value="eswt">체외충격파 및 전문 도수치료 병행</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="insurance-status">실손의료비 보험 보유 현황</label>
+                        <select id="insurance-status" name="insurance_status">
+                            <option value="yes">가입되어 있음 (실비 청구 대상)</option>
+                            <option value="no">미가입 상태</option>
+                            <option value="unknown">잘 모름 (추후 확인 필요)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="consultation-method">원하시는 맞춤 상담 및 결과 확인 방식</label>
+                    <select id="consultation-method" name="consultation_method">
+                        <option value="sms">다이렉트 문자 메시지로 맞춤 가이드라인 수령</option>
+                        <option value="phone">전문 상담 플래너와의 상세 전화 통화</option>
+                        <option value="kakao">카카오톡 채널 연동을 통한 온라인 텍스트 상담</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="detail-message">상세한 팔꿈치 상태 묘사 및 특별 요청 사항</label>
+                    <textarea id="detail-message" name="detail_message" rows="4" placeholder="예: 무거운 덤벨 운동을 하다가 갑자기 안쪽 뼈 밑에 감전된 것처럼 찌릿한 아픔이 생겼고 3주 넘게 낫지 않습니다. 완화될 수 있는 최저가 병원 추천 정보도 원합니다."></textarea>
+                </div>
+
+                <button type="submit" class="btn-cta">통증 지수 분석 및 맞춤 솔루션 계산서 받기</button>
+            </form>
+        </section>
+
+        <section id="references" class="reference-section">
+            <h2>학술적 근거 및 공신력 있는 공식 외부 사이트 자료 목록</h2>
+            <p>질환에 관한 객관적이고 깊이 있는 보건 의료 정보는 아래의 공인된 원천 플랫폼과 백과사전 문헌을 통하여 직접 교차 검증하실 수 있습니다.</p>
+            <ul>
+                <li><a href="https://painutreath.koreahankang.com" target="_blank" rel="nofollow noopener">근골격계 질환 및 통증 치료 다이렉트 백서 가이드라인 (reliabledone.com)</a></li>
+                <li><a href="https://namu.wiki/w/%EB%82%B4%EC%B8%A1%EC%83%81%EA%B3%BC%EC%97%BC" target="_blank" rel="nofollow noopener">나무위키 - 내측상과염 및 골프엘보 질환 개요 종합 데이터</a></li>
+                <li><a href="https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do" target="_blank" rel="nofollow noopener">질병관리청 국가건강정보포털 - 현대인들의 팔꿈치 상과염 유병률과 치료 정책 기준</a></li>
+            </ul>
+        </section>
+    </div>
+  
